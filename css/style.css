@@ -14,8 +14,8 @@ h1,a {
 h3{
     font-size: 7rem;
     padding-top: 3px;
-    border-bottom: 7px solid black; /* Change the color and style as needed */
-    width: calc(50% + 2px); /* Extending the underline by 2px longer than the text */
+    border-bottom: 7px solid rgb(101, 108, 104); /* Change the color and style as needed */
+    width: calc(90px + 30% + 2rem); /* Extending the underline by 2px longer than the text */
     /* margin-left: -0.5rem;  */
 
 }
@@ -34,7 +34,7 @@ h3{
     font-size: 5rem;
     padding-top: 3px;
     border-bottom: 5px solid black; /* Change the color and style as needed */
-    width: calc(30% + 2px);
+    width: calc(210px + 30% + 2rem);
 
 }
 

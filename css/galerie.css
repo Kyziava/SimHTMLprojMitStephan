@@ -59,6 +59,45 @@ div.scroll-container img {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+/* Perfomamce*/
+.perf{
+  border-left: dashed 1.5rem rgb(76, 83, 10);
+  display: border-box;
+
+}
+
+.bild{
+ position: relative;
+  margin-top: 1rem;
+  margin-left: 3%;
+  size: 10rem;
+}
+.bild:hover .overlayPerf {
+  opacity: 0.65;
+}
+.overlayPerf {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #6ea8b6;
+}
+.textPerf {
+  color: rgb(13, 10, 49);
+  font-size: 7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 
 /* Hover */
@@ -107,7 +146,7 @@ div.scroll-container img {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;

@@ -1,0 +1,77 @@
+html {
+    font-family: "Grenze Gotisch", serif;
+    background-color: rgb(237, 205, 157);
+}
+
+div,
+p {
+    
+    /* box-sizing: border-box; */
+}
+
+h1,a { 
+    
+    font-family: "Vidaloka", serif;
+  /* text-align: start; */
+  
+    color: rgb(114, 68, 200);
+}
+h3{
+    font-size: 7rem;
+    padding-top: 3px;
+    border-bottom: 7px solid black; /* Change the color and style as needed */
+    width: calc(50% + 2px); /* Extending the underline by 2px longer than the text */
+    /* margin-left: -0.5rem;  */
+
+}
+
+#wrapper {
+    text-align:left;
+    max-width: 150rem;
+}
+
+.flex {
+    /* margin-top: 1px; */
+    border-left: dashed 1.5rem rgb(76, 83, 10);
+
+}
+.inner h3{
+    font-size: 5rem;
+    padding-top: 3px;
+    border-bottom: 5px solid black; /* Change the color and style as needed */
+    width: calc(30% + 2px);
+
+}
+
+.inner {
+
+    padding-left: 3rem;
+    /* border: solid 1px black; */
+}
+p{
+
+    font-size: 1.5rem;
+}
+
+/*tablet*/
+@media (max-width:64rem) {
+    h3{
+        font-size: 5rem;
+    }
+    .flex {
+        display: flex;
+        gap: 1.5rem;
+    }
+}
+
+/*smartphone*/
+@media (max-width:30rem) {
+    h3{
+        font-size: 3rem;
+    }
+    .flex {
+        display: block;
+    }
+}
+
+/* neu */

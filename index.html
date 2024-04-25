@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/galerie.css">
+  <link rel="stylesheet" href="css/hamburger.css">
+  <script src="js/app.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Vidaloka&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="top-navi">
+      <div id="navi-box">
+        <label id="check-label" for="check"></label>
+        <input type="checkbox" id="check">
+        <div><a id="home-button" href="index.html">
+            <h1 class="font-effect-emboss">Galerie Cimdata</h1>
+          </a></div>
+      </div>
+
+      <nav class="smartphone-navi">
+        <div><a href="malerei.html">
+            <h1>Malerei</h1>
+          </a></div>
+        <div><a href="skulptur.html">
+            <h1>Skulptur</h1>
+          </a></div>
+        <div><a href="fotografie.html">
+            <h1>Fotografie</h1>
+          </a></div>
+        <div><a href="zeichnungen.html">
+            <h1>Zeichnungen</h1>
+          </a></div>
+        <div><a href="kuenstler.html">
+            <h1>Künstler</h1>
+          </a></div>
+      </nav>
+
+      <nav class="desktop-navi">
+        <div class="dropdown">
+          <button class="dropbtn">Malerei</button>
+          <div class="dropdown-content">
+            <a href="#">Abstrakte Kunst</a>
+            <a href="#">Expressionismus</a>
+            <a href="#">Impressionismus</a>
+            <a href="#">Pop Art</a>
+            <a href="#">Street Art</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Skulptur</button>
+          <div class="dropdown-content">
+            <a href="#">Ton</a>
+            <a href="#">Holz</a>
+            <a href="#">Bronze</a>
+            <a href="#">Stein</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Fotografie</button>
+          <div class="dropdown-content">
+            <a href="#">Natur</a>
+            <a href="#">Porträt</a>
+            <a href="#">Akt</a>
+            <a href="#">Tier</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Zeichnungen</button>
+          <div class="dropdown-content">
+            <a href="#">Bleistift</a>
+            <a href="#">Tinte</a>
+            <a href="#">Kohle</a>
+            <a href="#">Pastell</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Künstler</button>
+          <div class="dropdown-content">
+            <a href="#">Malerei</a>
+            <a href="#">Bildhauer</a>
+            <a href="#">Fotografen</a>
+            <a href="#">Zeichner</a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Galley -->
+
+  <div class="scroll-container" id="imageGallery">
+
+
+    <img src="img/medium/art_1.jpg" style="width: calc(100% / 3);"
+      alt="William-Adolphe Bouguereau Junges Mädchen verteidigt sich gegen Cupid">
+
+    <img src="img/medium/art_2.jpg" style="width: calc(100% / 3);" alt="Ein junger Gelehrter und sein
+        Erzieher || Rembrandt">
+    <img src="img/medium/art_3.jpg" style="width: calc(100% / 3);">
+    <img src="img/medium/art_4.jpg" style="width: calc(100% / 3);">
+    <img src="img/medium/art_5.jpg" style="width: calc(100% / 3);">
+    <img src="img/medium/art_6.jpg" style="width: calc(100% / 3);">
+  </div>
+  </div>
+  <!-- Left and right arrows -->
+  <button class="arrow arrow-left" onclick="scrollGallery(-1)">&#10094;</button>
+  <button class="arrow arrow-right" onclick="scrollGallery(1)">&#10095;</button>
+
+
+
+  <!-- text -->
+  <div id=wrapper>
+
+    <h3>Aktuelles</h3>
+    <div class="flex">
+      <div class="inner">
+        <h3>Ausstellung </h3>
+        <h1>am 3.5.24</h1>
+
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore magnam maiores amet eveniet? At
+          veritatis facilis aliquam mollitia nisi, hic asperiores, quos facere animi libero incidunt non nemo
+          rem similique.
+          Aliquid, corporis vel quia voluptates nam beatae accusamus fuga accusantium laboriosam explicabo
+          provident at cupiditate aut eveniet omnis asperiores blanditiis autem excepturi, id cumque tempore.
+          Modi nam corporis perferendis quis!
+          Pariatur eos qui dignissimos aperiam, debitis porro consequuntur a repellendus architecto, rem
+          perspiciatis explicabo reiciendis? Quas itaque voluptate vitae laboriosam rerum? Cum aut quis
+          voluptate blanditiis nisi culpa. Maxime, itaque.
+    </div>
+  </div>
+  <div class="king">
+    <div class="container">
+      <img src="img/William-Adolphe Bouguereau/1.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Jeûne Fille Se Défendant Contre L'Amour</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="img/William-Adolphe Bouguereau/2.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Naissance de Venus</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="img/William-Adolphe Bouguereau/3.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">L'Amour au Papillon</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="img/William-Adolphe Bouguereau/4.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Flagellation de Notre Seigneur Jesus Christ</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="img/William-Adolphe Bouguereau/5.jpg" alt="Avatar" class="image" ">
+    <div class=" overlay">
+      <div class="text">La Petite Esméralda</div>
+    </div>
+  </div>
+  </div>
+  
+
+</body>
+
+</html>

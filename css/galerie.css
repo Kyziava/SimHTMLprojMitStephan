@@ -1,0 +1,118 @@
+div.scroll-container {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: nowrap; /* Ensures the images stay in a single line */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+div.scroll-container img {
+  border: 0.5rem outset #555; /* Adjust border size */
+  flex: 0 0 auto; /* Ensures images maintain their original size */
+  scroll-snap-align: start; /* Ensures images snap into place */
+  margin-right: 1rem; /* Adjust spacing between images */
+}
+.arrow {
+  position: absolute; /* Position arrows relative to the scroll container */
+  top: 75%; /* Position arrows vertically in the middle */
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border: none;
+  outline: none;
+}
+
+.arrow-left {
+  left: 0; /* Position left arrow at the left edge */
+}
+
+.arrow-right {
+  right: 0; /* Position right arrow at the right edge */
+}
+/* width */
+::-webkit-scrollbar {
+  
+  height: 0.5rem;
+  width: 0.5rem;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(230, 205, 166);
+  height: 1rem;
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 1rem;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+/* Hover */
+.king{
+  border-left: dashed 1.5rem rgb(76, 83, 10);
+  justify-content: space-around;
+  display: flex;
+
+}
+.container {
+  
+  display: inline-flex; /* Add this line */
+  position: relative;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  
+  
+}
+
+.image {
+  
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #b66ea3;
+}
+
+.container:hover .overlay {
+  opacity: 0.75;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

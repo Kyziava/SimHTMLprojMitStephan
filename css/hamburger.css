@@ -1,0 +1,145 @@
+
+#home-button {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration:none rgb(11, 114, 216);
+}
+
+#check, #check-label {
+    display:none;
+}
+
+.top-navi nav {
+    /* border: solid black; */
+    
+    height: 16rem; /* smarfone block grosse */
+    display: inline;
+    justify-content: space-evenly;
+    /* padding-bottom:1rem ; */
+
+}
+
+.top-navi a {
+    width: 11.5rem;
+    color:rgb(52, 3, 142);
+    text-decoration: none;
+    /* font-size: 1.2rem; */
+    padding-bottom: 0.5rem;
+}
+.top-navi a:hover {
+    
+    color:rgb(83, 52, 140);
+}
+/* .top-navi nav a:visited {   Farbe für besuchte links
+    color:rgb(24, 119, 208);
+} */
+
+#navi-box {
+
+    display:flex;
+    justify-content:space-around;
+}
+#navi-box div {
+    display:block;
+    align-self: center; 
+}
+
+/* media Regel für Smartphone */
+@media (max-width: 64rem){
+    .top-navi nav {
+        
+        z-index: 2;
+        display: none;
+    }
+    #check-label {
+        display:block;
+        /* border: solid blue; */
+        height: 5rem;
+        width: 5rem;
+        margin-right: auto;
+        /* line-height: 5rem; */
+        align-content: center;
+        font-size: 2rem;
+        user-select: none;
+        background-image: url(img/hamburger.svg);
+        background-repeat: no-repeat;
+        
+        background-size: 2rem;
+        background-position: 50% 50%;   
+    }
+
+    #navi-box div {
+        margin-right: auto;
+    }
+
+    div:has(#check:checked)+ nav {    /*Parent-selector*/
+
+        display: block;
+        position: absolute;  /*macht daraus einen Layer*/
+        background-color: rgb(210, 181, 139);
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+
+@media (min-width: 30rem) {
+   
+
+    nav.smartphone-navi{
+        display: none;
+    }
+
+    .dropbtn {
+        
+        height: 3rem;
+        width: 9.2rem;
+        background-color: rgb(237, 205, 157);
+        color: rgb(52, 3, 142);
+        /* padding-top: 20px; */
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+      }
+      
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        padding-left: 3rem;
+        padding-right: auto;
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(210, 181, 139);
+        /* min-width: 167rem */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a { 
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: rgb(211, 188, 155)}
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+      
+        display: block;
+      }
+      
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {
+        background-color: rgb(210, 181, 139);
+      }
+    }
